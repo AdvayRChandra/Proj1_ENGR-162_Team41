@@ -27,17 +27,36 @@
 % all aspects of the program development and execution.
 % 
 % A BRIEF DESCRIPTION OF WHAT THE PROGRAM OR FUNCTION DOES 
+
+clc;
+clear all;
+
 % ---------------------------------------------------
 %  Inputs
 % ---------------------------------------------------
 
+data = transpose(importdata("Data.xlsx"));
 
 % ---------------------------------------------------
 %   Computations
 % ---------------------------------------------------
 
+time = data(1,:);
+x_acc = data(2,:);
+y_acc = data(3,:);
+z_acc = data(4,:);
 
+% Calculate the magnitude of the acceleration
+acc_magnitude = sqrt(x_acc.^2 + y_acc.^2 + z_acc.^2);
 
 % ---------------------------------------------------
 %   Outputs
 % ---------------------------------------------------
+
+figure;
+plot(time, [acc_magnitude; x_acc; y_acc; z_acc]);
+xlabel('Time (s)');
+ylabel('Acceleration (m/s^2)');
+title('Acceleration Magnitude vs. Time');
+legend('Mag Acceleration', 'X Acceleration', 'Y Acceleration', 'Z Acceleration');
+grid on;
