@@ -1,24 +1,23 @@
-% Activity X.X.X: A MATLAB Activity.
+% Design Project 1: Analysis of Acceleration Data
 % File: analysis.m
-% Description: This program reads acceleration data from an Excel file,
-% computes the magnitude of the acceleration, and plots it against time.
+% Description: A MATLAB program that analyzes acceleration data from an Excel file.
 % Date: 30 January 2026
 % By: Advay R Chandra
 % chand289
-% Full Name team member 2
-% Login ID
-% Full Name team member 3 
-% Login ID
-% Full Name team member 4
-% Login ID
-% Section: Number
-% Team: Team Number
+% Sarim Khan
+% khan681 
+% Emma C Wolcott 
+% ewolcott
+% Katherine E Hughley
+% khughle
+% Section: 3
+% Team: 41
 % 
 % ELECTRONIC SIGNATURE
 % Advay R Chandra
-% Full Name team member 2
-% Full Name team member 3
-% Full Name team member 4
+% Sarim Khan
+% Emma C Wolcott
+% Katherine E Hughley
 % 
 % The electronic signatures above indicate that the program
 % submitted for evaluation is the combined effort of all
@@ -27,7 +26,9 @@
 % member of the team has a general understanding of
 % all aspects of the program development and execution.
 % 
-% A BRIEF DESCRIPTION OF WHAT THE PROGRAM OR FUNCTION DOES 
+% A BRIEF DESCRIPTION OF WHAT THE PROGRAM OR FUNCTION DOES
+% This program reads acceleration data from an Excel file,
+% computes the magnitude of the acceleration, and plots it against time.
 
 clc;
 clear all;
