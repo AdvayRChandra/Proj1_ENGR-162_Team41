@@ -1,9 +1,10 @@
 % Activity X.X.X: A MATLAB Activity.
-% File: filename.m
-% Description:
-% Date: 1 January 2022
-% By: Full Name team member 1
-% Login ID
+% File: analysis.m
+% Description: This program reads acceleration data from an Excel file,
+% computes the magnitude of the acceleration, and plots it against time.
+% Date: 30 January 2026
+% By: Advay R Chandra
+% chand289
 % Full Name team member 2
 % Login ID
 % Full Name team member 3 
@@ -14,7 +15,7 @@
 % Team: Team Number
 % 
 % ELECTRONIC SIGNATURE
-% Full Name team member 1
+% Advay R Chandra
 % Full Name team member 2
 % Full Name team member 3
 % Full Name team member 4
