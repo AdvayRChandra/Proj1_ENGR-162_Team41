@@ -55,10 +55,10 @@ acc_magnitude = sqrt(x_acc.^2 + y_acc.^2 + z_acc.^2);
 %   Outputs
 % ---------------------------------------------------
 
-figure;
+figure(1);
 plot(time, [acc_magnitude; x_acc; y_acc; z_acc]);
-xlabel('Time (s)');
-ylabel('Acceleration (m/s^2)');
-title('Acceleration Magnitude vs. Time');
-legend('Mag Acceleration', 'X Acceleration', 'Y Acceleration', 'Z Acceleration');
-grid on;
+xlabel("Time (s)");
+ylabel("Acceleration (m/s^2)");
+title("Acceleration vs. Time");
+legend("Total Mag Acceleration", "X Acceleration", "Y Acceleration", "Z Acceleration", "Location", "southwest");
+grid;
