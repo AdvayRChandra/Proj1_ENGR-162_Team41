@@ -51,15 +51,16 @@ z_acc = data(4,:); % Z-axis acceleration
 
 % Calculate the magnitude of the acceleration
 acc_magnitude = sqrt(x_acc.^2 + y_acc.^2 + z_acc.^2);
+acc_magnitude_adj = acc_magnitude - g; % Adjust for gravity
 
 % ---------------------------------------------------
 %   Outputs
 % ---------------------------------------------------
 
 figure(1);
-plot(time, [acc_magnitude; x_acc; y_acc; z_acc], "LineStyle", "-", "LineWidth", 1.5);
+plot(time, [acc_magnitude_adj; acc_magnitude; x_acc; y_acc; z_acc], "LineStyle", "-", "LineWidth", 1.5);
 xlabel("Time (s)");
 ylabel("Acceleration (m/s^2)");
 title("Acceleration vs. Time");
-legend("Total Mag Acceleration", "X Acceleration", "Y Acceleration", "Z Acceleration", "Location", "southwest");
+legend("Total Mag Acceleration (Adjusted)", "Total Mag Acceleration", "X Acceleration", "Y Acceleration", "Z Acceleration", "Location", "southwest");
 grid;
