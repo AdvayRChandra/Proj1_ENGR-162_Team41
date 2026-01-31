@@ -58,7 +58,13 @@ acc_magnitude_adj = acc_magnitude - g; % Adjust for gravity
 % ---------------------------------------------------
 
 figure(1);
-plot(time, [acc_magnitude_adj; acc_magnitude; x_acc; y_acc; z_acc], "LineStyle", "-", "LineWidth", 1.5);
+plot(time, acc_magnitude_adj, "LineStyle", "-", "LineWidth", 1.5);
+hold on;
+plot(time, acc_magnitude, "LineStyle", "-", "LineWidth", 1.5);
+plot(time, x_acc, "LineStyle", "--", "LineWidth", 1);
+plot(time, y_acc, "LineStyle", "--", "LineWidth", 1);
+plot(time, z_acc, "LineStyle", "--", "LineWidth", 1);
+hold off;
 xlabel("Time (s)");
 ylabel("Acceleration (m/s^2)");
 title("Acceleration vs. Time");
