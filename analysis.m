@@ -38,16 +38,16 @@ g = 9.81; % Acceleration due to gravity in m/s^2
 %  Inputs
 % ---------------------------------------------------
 
-data = transpose(importdata("Data.xlsx")) * g; % Convert from g's to m/s^2
+data = transpose(importdata("Data.xlsx"));
 
 % ---------------------------------------------------
 %   Computations
 % ---------------------------------------------------
 
 time = data(1,:); % Time data
-x_acc = data(2,:); % X-axis acceleration
-y_acc = data(3,:); % Y-axis acceleration
-z_acc = data(4,:); % Z-axis acceleration
+x_acc = data(2,:) * g; % X-axis acceleration
+y_acc = data(3,:) * g; % Y-axis acceleration
+z_acc = data(4,:) * g; % Z-axis acceleration
 
 % Calculate the magnitude of the acceleration
 acc_magnitude = sqrt(x_acc.^2 + y_acc.^2 + z_acc.^2);
